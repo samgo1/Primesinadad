@@ -5,24 +5,29 @@
   <title>Prime Sinadad</title>
    <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- The t-shirt font -->
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<%= image_tag("logo.png", :class => "logo") %>
-<style>
-	.logo {
-    max-width: 100%;
+    <style>
+    .logo {
+    width: 100%;
     height: auto;
-	}
-	p{
-		color: white;
-	}
-	body {
+    }
+    p{
+        color: white;
+    }
+    body {
     background-color: black;
-	}
-</style>
-<%= yield %>
-</body>
+    }
+    </style>
+
+</head>
+    <body>
+    <%= image_tag("logo.png", :class => "logo") %>
+
+    <%= yield %><!-- ruby process? -->
+    </body>
 </html>
